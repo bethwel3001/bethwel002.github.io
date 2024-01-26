@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Details Page</title>
+
+<!-- css linking -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- box icons link -->
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+<nav id="navBar" class="navbar-white">
+
+  <a href="index.html">
+
+    <!-- logo image -->
+
+    <img src="image/yes.png" class="logo">
+  </a>
+
+
+<ul class="nav-links">
+  <li><a href="index.html" class="active">Popular Places > </a></li>
+  <li><a href="house.html">Residence & Accomodation > </a></li>
+  <li><a href="list.html">Packages & Booking</a></li>
+</ul>
+<a href="test.html" class="register-btn">Register Now</a>
+<i class='bx bx-menu' onclick="togglebtn()"></i>
+</nav>
+
+<div class="house-details">
+  <div class="house-title">
+    <h1>Blixen House</h1>
+
+    <div class="row">
+      <div>
+        <i class='bx bxs-star'></i>
+  <i class='bx bxs-star'></i>
+  <i class='bx bxs-star'></i>
+  <i class='bx bxs-star-half'></i>
+  <i class='bx bx-star'></i>
+<span>245 Reviews</span>
+      </div>
+      <div>
+        <p>Location: Muthaiga - Nairobi, Kenya</p>
+      </div>
+    </div>
+  </div>
+  <div class="gallery">
+<div class="gallery-img-1"><img src="image/best-mansion-in-Nairobi.webp"></div>
+<div><img src="image/resident2.jpeg"></div>
+<div><img src="image/resident3.jpeg"></div>
+<div><img src="image/resident4.jpeg"></div>
+<div><img src="image/resident5.jpeg"></div>
+
+  </div>
+
+<div class="small-details">
+  <h2>The whole apartment is owned by Oliver</h2>
+  <p>2Guest &nbsp; &nbsp; 2 Beds &nbsp; &nbsp; 1 barhroom</p>
+  <h4>@16,000 / Day</h4>
+</div>
+<hr class="line">
+<form class="check-form">
+
+<div>
+  <label>Check In</label>
+<input type="text" placeholder="Add Date">
+</div>
+<div>
+  <label>Check Out</label>
+<input type="text" placeholder="Add Date">
+</div>
+<div>
+  <label class="guest-field">Guest</label>
+<input type="text" placeholder="2 Guests">
+</div>
+<button type="submit">Check Availability</button>
+</form>
+
+<ul class="details-list">
+<li><i class='bx bxs-home-circle'></i>Entire Home:
+  <span>You will have the entire apartment foy you.</span>
+</li>
+
+<li><i class='bx bxs-paint-roll'></i>Enhanced Clean:
+  <span>This host has ensured a safe and clean environment.</span>
+</li>
+
+<li><i class='bx bxs-map'></i>Awesome Location:
+  <span>90% of our clients gave us a 5 star rating as per the location.</span>
+</li>
+
+<li><i class='bx bxs-heart'></i>Great Check-In experience!:
+  <span>99% of our clients gave the Check-In progress a thumbs up.</span>
+</li>
+</ul>
+
+<hr class="line">
+<p class="home-desc">Guests will be allocated on  the ground floor according to availability. You get
+  a confortable Two bedroom apartment has a true  city feeling.The price quoting is 
+  for 2 guests.
+</p>
+<hr class="line">
+<div class="map">
+<h3>Locattion on map</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63820.258550780614!2d36.65060849908915!3d-1.31586609826275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1c
+809869d64b%3A0x199b5604a77f13f5!2sKaren%2C%20Nairobi!5e0!3m2!1ssw!2ske!4v1706016550346!5m2!1ssw!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <b>Karen, Nairobi , Kenya</b>
+  <p>It's like a home away from home</p>
+</div>
+<hr class="line">
+<div class="host">
+  <img src="image/person.jpeg">
+  <div>Hosted by Oliver</div>
+  <p><span>
+    <i class='bx bxs-star'></i>
+    <i class='bx bxs-star'></i>
+    <i class='bx bxs-star-half'></i>
+    <i class='bx bx-star'></i>
+  </span>&nbsp; &nbsp; 245 rerviews &nbsp; &nbsp; Response rate 100% &nbsp;
+  &nbsp; Response time: 60 mins</p>
+</div>
+
+<a href="#" class="contact-host">Contact Host</a>
+</div>
+
+<div class="container">
+  <div class="footer">
+    <a href="https://facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+    <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+    <a href="https://instagram.com/"><i class='bx bxl-instagram'></i></a>
+    <a href="https://linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+    <hr>
+    <p>Copyright © 2024, Bethwel_K. </p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="house.html"><i class='bx bx-arrow-from-bottom'></i></a>
+    </div>
+</div>
+<script>
+
+  var navBar = document.getElementById("navBar");
+  function togglebtn(){
+  navBar.classList.toggle("hidemenu");
+  }
+  
+  </script>
+  </body>
+  </html>

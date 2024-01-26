@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Here</title>
+</head>
+<body>
+
+
+
+  <style>
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+input{
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+button{
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body{
+  background-color: aqua;
+}
+
+  </style>
+
+  
+  <form>
+
+<input type="text" name="name" placeholder="Enter Full Names" required>
+<input type="email" name="email" placeholder="Enter Valid Email Address" required>
+<input type="text" name="location" placeholder="Your Location">
+<input type="password" name="password" placeholder="Suggest A Strong password" required>
+<button type="button" onclick="submitForm()">Submit Details</button>
+
+  </form>
+
+  <script>
+    function submitForm() {
+      alert("Thank you , your details have been submitted!");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <!-- <script src="index.js"></script> -->
+
+</head>
+<body>
+  
+	<style>
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #888888;
+			max-width: 500px;
+			margin: auto;
+		}
+		input[type=text], input[type=password], input[type=email], input[type=tel] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+    h2{
+      background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+      text-align: center;
+    }
+		.container {
+			padding: 16px;
+		}
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.4);
+		}
+		.modal-content {
+			background-color: #fefefe;
+			margin: 5% auto 15% auto;
+			border: 1px solid #888;
+			width: 80%;
+			padding-bottom: 20px;
+		}
+		.close {
+			position: absolute;
+			right: 25px;
+			top: 0;
+			color: #000;
+			font-size: 35px;
+			font-weight: bold;
+		}
+		.close:hover,
+		.close:focus {
+			color: red;
+			cursor: pointer;
+		}
+		.animate {
+			animation: zoom 0.6s;
+		}
+		@keyframes zoom {
+			from {transform: scale(0)}
+			to {transform: scale(1)}
+		}
+	</style>
+
+	<h2>Login/Signup Form</h2>
+	<form id="login-form" onsubmit="return validateForm()">
+		<h3>Login</h3>
+		<div class="container">
+			<label for="email"><b>Email</b></label>
+			<input type="email" placeholder="Enter Email" name="email" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit" onclick="submitForm()">Login</button>
+		</div>
+	</form>
+
+	<form id="signup-form" onsubmit="return validateForm()">
+		<h3>Signup</h3>
+		<div class="container">
+			<label for="fname"><b>First Name</b></label>
+			<input type="text" placeholder="Enter First Name" name="fname" required>
+
+			<label for="lname"><b>Last Name</b></label>
+			<input type="text" placeholder="Enter Last Name" name="lname" required>
+
+			<label for="location"><b>Location</b></label>
+			<input type="text" placeholder="Enter Location" name="location" required>
+
+			<label for="phone"><b>Phone Number</b></label>
+			<input type="tel" placeholder="Enter Phone Number" name="phone" required>
+
+			<label for="email"><b>Email</b></label>
+			<input type="email" placeholder="Enter Email" name="email" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit" onclick="submitForm()">Signup</button>
+		</div>
+	</form>
+
+	<!-- <div id="myModal" class="modal">
+		<div class="modal-content animate">
+			<span class="close" onclick="document.getElementById('myModal').
+      style.display='none'" title="Close Modal">×</span>
+			<p id="modal-message"></p>
+		</div -->
+
+  </html>
+</body>
+    <script>
+      function submitForm() {
+        alert("Thank you , your details have been submitted!");
+      }
+    </script>
+  
